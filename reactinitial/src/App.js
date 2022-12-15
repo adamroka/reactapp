@@ -23,10 +23,16 @@ const App = () => {
             let html = '';
             teams.forEach(team => {
                 let htmlSegment = `<div class="team">
-                                    <button type="button" onclick="myFunction(this.id)"> Show more </button>
+                                    
                                     <div class="info">
                                         <br> Name: ${team.name}
                                         <br> Stadium: ${team.stadium}
+                                    </div>
+                                    <button type="button" onclick="myFunction(this.id)"> Show more </button>
+                                    <div class="more">
+                                        <br> Players: ${team.franchisePlayers}
+                                        <br> Id:
+                                        <br> Name: 
                                     </div>
                                 </div>`;
 
